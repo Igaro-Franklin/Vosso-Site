@@ -1,0 +1,450 @@
+/* 
+    font-family: 'agdasima';
+    font-family: 'belanosima';
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.margin-left{
+    margin-left: 5px;
+}
+
+.margin-top{
+    margin-top: 10px;
+}
+
+.cor-azul{
+    font-size: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+  
+
+/* ----------------------------------------------------- HEADER ----------------------------------------------------- */
+
+header{
+    background-color: black;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 6px double white;
+    z-index: 2;
+}
+
+header h3{
+    font-family: 'Agdasima';
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    color: white;
+}
+header ul{
+    width: 650px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+.link-menu{
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.6s ease;
+    color: white;
+    font-family: 'belanosima';
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.link-menu:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+
+.icons-menu{
+    display: none;
+}
+
+@media (max-width:860px){
+
+    #navMenu{
+        display: none;
+    }
+
+}
+
+
+/* ----------------------------------------------------- HOME ----------------------------------------------------- */
+
+.section-home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/IMAGEM/img01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.container-home{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-home h1{
+    margin-top: 15px;
+    font-family: 'Agdasima';
+    font-weight: 700;
+    text-align: center;
+    background-color: blue;
+    display: inline;
+    padding: 1px;
+    border-radius: 0.2em;
+}
+
+.container-home h2{
+    font-family: 'agdasima';
+    margin: 10px;
+    color: white;
+}
+
+.container-home p{
+    margin: 5px 20px;
+    font-family: 'belanosima';
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.container-home-p{
+    width: 100%;
+    display: flex;
+}
+
+.container-home h1 span{
+    color: white;
+}
+
+.btn-cnt{
+    width: 150px;
+    height: 35px;
+    margin: 20px 0 20px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+    font-family: 'agdasima';
+    letter-spacing: 1px;
+    transition: .6s;
+}
+
+.btn-cnt:hover{
+    border-radius: 15px;
+    color: white;
+    background-color: blue;
+}
+
+/* ------------- HOME - max 860 ------------- */
+
+@media (max-width: 860px){
+
+    .container-home{
+        width: 98%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-home h1{
+      font-size: 22px;
+    }
+
+    .container-home h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container-home-p{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .img-p img{
+        width: 250px;
+    }
+
+}
+
+/* ----------------------------------------------------- SOBRE NÓS ----------------------------------------------------- */
+
+.section-sobre-nos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background: linear-gradient(331deg, rgb(160, 160, 160) 25%, rgb(253, 253, 253) 50%, rgba(160, 160, 160) 75%);
+}
+
+.section-sobre-nos div{
+    width: 80%;
+    margin: 50px 0;
+    display: flex;
+}
+
+.section-sobre-nos div img{
+    width: 600px;
+    height: 480px;
+    position: relative;
+    margin-left: -200px;
+}
+
+.section-sobre-nos div p{
+    font-size: 18px;
+    padding: 10px 0;
+    z-index: 2;
+}
+
+
+/* ------------- SOBRE NÓS - max 860 ------------- */
+
+@media (max-width: 860px){
+
+    .section-sobre-nos div{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .section-sobre-nos div img{
+        width: 300px;
+        height: 260px;
+        position: relative;
+        margin-left: 0;
+    }
+    
+}
+
+/* ----------------------------------------------------- SERVIÇOS ----------------------------------------------------- */
+
+.section-servicos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url(/IMAGEM/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.title-servicos{
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    font-family: 'agdasima';
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    background-color: blue;
+    box-shadow: 5px 5px 4px black;
+}
+
+.container-servicos{
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    min-height: 500px;
+    height: auto;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'belanosima';
+    border: 4px double black;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+/* ------------- SOBRE NÓS - max 860 ------------- */
+
+@media (max-width: 860px) {
+    
+    .container-servicos{
+        flex-wrap: wrap;
+        width: 98%;
+        margin: 0 1%;
+    }
+}
+
+/* ----------------------------------------------------- PROJETOS ----------------------------------------------------- */
+
+.section-projetos{
+    width: 100%;
+    height: 100vh;
+}
+
+.container-projetos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'agdasima';
+    color: blue;
+    background-color: black;
+}
+
+
+/* ----------------------------------------------------- CONTATO ----------------------------------------------------- */
+
+.section-contato{
+    width: 100%;
+    height: 300px;
+    background: url(/IMAGEM/FP-01-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-contato{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'agdasima';
+}
+
+.container-contato a{
+    text-decoration: none;
+    color: blue;
+    font-family: 'belanosima';
+}
+
+/* ----------------------------------------------------- BOTÃO IR PARA O TOPO ----------------------------------------------------- */
+
+#ir-top{
+    position: fixed;
+    right: -100px;
+    bottom: 20px;
+    transition: right 0.3s ease;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    z-index: 4;
+}
+
+#ir-top.mostrar{
+    right: 20px;
+}
+
+#ir-top:hover{
+    cursor: pointer;
+}
+
+#ir-top i {
+    color: blue;
+    font-size: 35px;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+
+/* ----------------------------------------------------- BOTÃO IR PARA O TOPO ----------------------------------------------------- */
+
+footer{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.footer-container p{
+    font-family: 'agdasima';
+}
+
+.footer-container ul{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.footer-container ul li{
+    list-style: none;
+}
+
+.footer-container ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    font-family: 'belanosima';
+    transition: .6s;
+}
+
+.footer-container ul li a:hover{
+    color: rgb(104, 104, 104);
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- TERMOS DE SERVIÇOS ----------------------------------------------------- */
+
+.container-termos{
+    width: 80%;
+    margin: 10%;
+    border: 4px double black;
+    padding: 25px;
+}
+
+@media (max-width: 860px){
+    .container-termos{
+        width: 96%;
+        margin: 5% 2%;
+        padding: 20px 0;
+        border: none;
+        font-size: 18px;
+    }
+
+    .container-termos h1{
+        margin: 10px 0;
+    }
+}
